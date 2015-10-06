@@ -9,15 +9,11 @@ $(document).on('click', '#search-results img', function() {
   $("#workspace").append(img);
 });
 
-$("#search-term").keyup(function(event){
-    if(event.keyCode == 13){
-        $("#go-search").click();
-    }
-});
-
 $(document).on('input', '#text', function() {
   $("#caption").text($(this).val());
 });
+
+
 
 $(document).on('change', '#left', function() {
   $("#caption").css("left", $(this).val() + 'px');

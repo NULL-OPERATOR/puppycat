@@ -4,7 +4,7 @@ function findImagesOnGoogle(options) {
   $(options.container).empty();
   $(options.container).append($("<p>").text("Searching..."));
 
-  var imageSearch = new google.search.ImageSearch();
+  var ImageSearch = new google.search.ImageSearch();
   imageSearch.setSearchCompleteCallback(this, function() {
     google.search.Search.getBranding('branding');
     $(options.container).empty();
