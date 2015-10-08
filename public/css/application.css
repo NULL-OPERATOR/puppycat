@@ -1,16 +1,30 @@
 body {
   text-align: center;
-  background-image: url(/images/miffy.jpg);
+  background-image: url(/images/puppycat.gif);
   color: gray;
   font-family: Helvetica, Arial;
   margin: 0;
   padding: 0;
 }
+h2 {
+  color: rgba(230,2,176, 0.2);
+  font-style: courier;
+  font-size: 100px;
+  font
+}
 
+p {
+  color: rgba(250,2,176, 0.6);
+}
+
+#colour {
+  color: green;
+}
 #workspace {
+  background-color: rgba(0,255,162, 0.8);
   width: 600px;
   min-height: 300px;
-  border: 3px dashed blue;
+  border: 3px groove violet;
   margin: 0 auto;
 }
 
@@ -37,7 +51,7 @@ body {
   text-shadow: 0 0 5px rgba(0,0,0,0.4);
   width: 400px;
   font-size: 32px;
-  color: red;
+  color: green;
   margin: 0;
 }
 
@@ -72,6 +86,9 @@ input, button{
   padding: 10px;
   box-shadow: 1px 0 3px rgba(0,0,0, 0.3);
 }
+#text {
+  color: violet;
+}
 
 #controls {
   padding: 10px;
@@ -90,6 +107,10 @@ footer {
   box-shadow: -1px 0 5px rgba(0,0,0, 0.3);
 }
 
+select.decorated option:hover {
+    box-shadow: 0 0 10px 100px #1882A8 inset;
+}
+
 footer img {
   float: left;
   margin-right: 40px;
@@ -104,4 +125,5 @@ footer div {
 
 h1 {
   font-size: 50px;
+  color: #FF3E96;
 }

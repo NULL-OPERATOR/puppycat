@@ -14,21 +14,28 @@ $(document).on('input', '#text', function() {
 });
 
 
+$(document).ready(function (event) {
+    $('select').on('mouseenter', 'option', function (e) {
+        this.style.background = "limegreen";
+    });
+    $('select').on('mouseleave', 'option', function (e) {
+        this.style.background = "none";
+    });
+});
 
 $(document).on('change', '#left', function() {
   $("#caption").css("left", $(this).val() + 'px');
 });
-
 $(document).on('change', '#top', function() {
   $("#caption").css("top", $(this).val() + 'px');
 });
 
-$(document).on('change', '#top', function() {
+$(document).on('change', '#width', function() {
   $("#caption").css("width", $(this).val() + 'px');
 });
 
 $(document).on('change', '#size', function() {
-  $("#caption").css("width", $(this).val() + 'px');
+  $("#caption").css("font-size", $(this).val() + 'px');
 });
 
 $(document).on('change', '#colour', function() {
